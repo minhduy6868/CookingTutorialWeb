@@ -5,182 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.css">
+    <title>Ojk Global</title>
     <link rel="stylesheet" href="style.css">
 
-    
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
+  <div id="fixed-menu">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/home/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bữa sáng</a>
-                        <a class="dropdown-item" href="#">Bữa trưa</a>
-                        <a class="dropdown-item" href="#">Ăn nhẹ</a>
-                        <a class="dropdown-item" href="#">Món Rau</a>
-                        <a class="dropdown-item" href="#">Món gà</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/parallax_scroll/introduc.html">Giới thiệu</a>
-                </li>
-            </ul>
-            <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <a href="/sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
+      <a class="navbar-brand" href="#">
+        <img src="/public/assets/images/logo.png" alt="Ojk Global Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        </div>
-    </nav>
-    
-    <div class="banner">
-        <div class="bg bg-1"></div>
-        <div class="bg bg-2"></div>
-        <div class="bg bg-3"></div>
-        <h1>Minh Duy foood</h1>
-        <div class="bg bg-4"></div>
-        <div class="bg bg-5"></div>
-        <div class="bg bg-6"></div>
-        <div class="bg bg-7"></div>
-        <div class="bg bg-8"></div>
-        <div class="bg bg-9"></div>
-    </div>
-
-    <div class="tab intro">
-        <h2 class="animation-show">Ojk Global</h2>
-        <img src="img/logo.jpg" alt="" class="animation-show">
-        <p class="animation-show">
-            
-        </p>
-        <button class="animation-show">Contact</button>
-    </div>
-
-    <div class="tab library">
-        <div class="animation-show">
-            <img src="img/9.jpg">
-            <p>Image Name</p>
-        </div>
-        <div class="animation-show">
-            <img src="img/10.jpg">
-            <p>Image Name</p>
-        </div>
-        <div class="animation-show">
-            <img src="img/11.jpg">
-            <p>Image Name</p>
-        </div>
-        <div class="animation-show">
-            <img src="img/12.jpg">
-            <p>Image Name</p>
-        </div>
-    </div>
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-header">
-            <h2>Contact</h2>
-            <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
-          </div>
-  
-          <div class="row gx-lg-0 gy-4">
-  
-            <div class="col-lg-4">
-  
-              <div class="info-container d-flex flex-column align-items-center justify-content-center">
-                <div class="info-item d-flex">
-                  <i class="bi bi-geo-alt flex-shrink-0"></i>
-                  <div>
-                    <h4>Location:</h4>
-                    <p>A108 Adam Street, New York, NY 535022</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-envelope flex-shrink-0"></i>
-                  <div>
-                    <h4>Email:</h4>
-                    <p>info@example.com</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-phone flex-shrink-0"></i>
-                  <div>
-                    <h4>Call:</h4>
-                    <p>+1 5589 55488 55</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-clock flex-shrink-0"></i>
-                  <div>
-                    <h4>Open Hours:</h4>
-                    <p>Mon-Sat: 11AM - 23PM</p>
-                  </div>
-                </div><!-- End Info Item -->
-              </div>
-  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../home/home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Bữa sáng</a>
+              <a class="dropdown-item" href="#">Bữa trưa</a>
+              <a class="dropdown-item" href="#">Ăn nhẹ</a>
+              <a class="dropdown-item" href="#">Món Rau</a>
+              <a class="dropdown-item" href="#">Món gà</a>
             </div>
-  
-            <div class="col-lg-8">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div><!-- End Contact Form -->
-  
-          </div>
-  
-        </div>
-      </section><!-- End Contact Section -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../parallax_scroll/introduc.html">Giới thiệu</a>
+          </li>
+        </ul>
+        <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <a href="../sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
+      </div>
+    </nav>
+  </div>
+    
+  <div class="banner">
+    <div class="bg bg-1"></div>
+    <div class="bg bg-2"></div>
+    <div class="bg bg-3"></div>
+    <h1>Ojk Global</h1>
+    <div class="bg bg-4"></div>
+    <div class="bg bg-5"></div>
+    <div class="bg bg-6"></div>
+    <div class="bg bg-7"></div>
+    <div class="bg bg-8"></div>
+    <div class="bg bg-9"></div>
+  </div>
 
+  <div class="tab intro">
+    <h2 class="animation-show">Ojk Global</h2>
+    <img src="img/logo.jpg" alt="Ojk Global Logo" class="animation-show">
+    <p class="animation-show">Welcome to Ojk Global</p>
+    <button class="animation-show">Contact</button>
+  </div>
 
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div class="tab library">
+    <div class="animation-show">
+      <img src="img/9.jpg" alt="Image 1">
+      <p>Image Name</p>
+    </div>
+    <div class="animation-show">
+      <img src="img/10.jpg" alt="Image 2">
+      <p>Image Name</p>
+    </div>
+    <div class="animation-show">
+      <img src="img/11.jpg" alt="Image 3">
+      <p>Image Name</p>
+    </div>
+    <div class="animation-show">
+      <img src="img/12.jpg" alt="Image 4">
+      <p>Image Name</p>
+    </div>
+  </div>
+  
+  <div class="container-map">
+    <div class="info">
+      <h2>OJK Group</h2>
+      <p><span class="anticon anticon-environment-outlined"></span> Address: 450 Tran Dai Nghia, Dien Ngoc, Ngu Hanh Son, Da Nang 550000</p>
+      <p><span class="anticon anticon-phone-outlined"></span> Phone: (123) 456-7890</p>
+      <p><span class="anticon anticon-mail-outlined"></span> Email: contact@ojkglobal.com</p>
+      <p><span class="anticon anticon-global-outlined"></span> Website: <a href="https://www.itnexus.com">www.itnexus.com</a></p>
+    </div>
+    <div class="map">
+      <iframe
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=S%E1%BB%91%20450%20%C4%90%C6%B0%E1%BB%9Dng%20Tr%E1%BA%A7n%20%C4%90%E1%BA%A1i%20Ngh%C4%A9a,%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc,%20Ng%C5%A9%20H%C3%A0nh%20S%C6%A1n,%20%C4%90%C3%A0%20N%E1%BA%B5ng%20550000+(IT%20Nexus)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      >
+      </iframe>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
