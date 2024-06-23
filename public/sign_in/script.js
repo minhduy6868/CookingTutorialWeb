@@ -16,11 +16,20 @@ document.getElementById('signInForm').addEventListener('submit', function(event)
     const password = document.getElementById('signInPassword').value;
 
     if (userName === '' || password === '') {
-        alert('Please fill in all fields');
+        alert('Vui lòng điền đủ các trường');
         return;
     }
 
-    alert('Sign In Successful');
+    Swal.fire({
+        title: 'Đăng nhập',
+        text: 'Đăng nhập thành công',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/public/home/home.html'; 
+        }
+    });
 });
 
 document.getElementById('signUpForm').addEventListener('submit', function(event) {
@@ -30,16 +39,26 @@ document.getElementById('signUpForm').addEventListener('submit', function(event)
     const password = document.getElementById('signUpPassword').value;
 
     if (userName === '' || email === '' || password === '') {
-        alert('Please fill in all fields');
+        alert('Vui lòng điền đủ các trường');
         return;
     }
 
     if (!validateEmail(email)) {
-        alert('Please enter a valid email');
+        alert('Điền email đúng định dạng !');
         return;
     }
 
-    alert('Sign Up Successful');
+    Swal.fire({
+        title: 'Đăng kí',
+        text: 'Đăng kí thành công',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/public/home/home.html'; 
+        }
+    });
+    
 });
 
 function validateEmail(email) {
