@@ -433,9 +433,9 @@ h2 {
   position: relative;
   z-index: 1;
   overflow: hidden;
-webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+  webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
   box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
-  padding:60px;
+  padding: 60px;
   font-family: initial;
   font-weight: normal;
 }
@@ -572,26 +572,28 @@ webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
 
 @-webkit-keyframes bi-cycle {
   0% {
-      left: 0;
+    left: 0;
   }
   100% {
-      left: 100%;
+    left: 100%;
   }
 }
 
 @keyframes bi-cycle {
   0% {
-      left: 0;
+    left: 0;
   }
   100% {
-      left: 100%;
+    left: 100%;
   }
 }
-ol li, ul li {
+ol li,
+ul li {
   list-style: none;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -601,9 +603,27 @@ footer {
   background: #333;
   padding: 20px 0;
   color: #fff;
-  
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
+.carousel-caption .text {
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
 
+.carousel-caption .text-2 {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 
-
+.carousel-item img {
+  object-fit: cover;
+}
