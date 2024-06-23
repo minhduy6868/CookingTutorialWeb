@@ -1,299 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bánh cuốn nóng</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo.png"
+      type="image/x-icon"
+      sizes="48x48"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bánh cuốn nóng</title>
-  <link rel="stylesheet" href="../css/bootstrap.css" />
-  <link rel="stylesheet" href="detail.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link rel="shortcut icon" href="/public/assets/images/logo.png" type="image/x-icon" sizes="48x48" />
-</head>
+  <body>
+    <div id="fixed-menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-  <div id="fixed-menu">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        <img src="/public/assets/images/logo.png" alt="" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/public/home/home.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Menu
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../../home/home.html#Breakfast">Bữa sáng</a>
-              <a class="dropdown-item" href="../../home/home.html#Lunch">Bữa trưa</a>
-              <a class="dropdown-item" href="../../home/home.html#Dessert">Ăn nhẹ</a>
-              <a class="dropdown-item" href="../../home/home.html#Vegan">Món Rau</a>
-              <a class="dropdown-item" href="../../home/home.html#Meat">Món gà</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/public/parallax_scroll/introduc.html">Giới thiệu</a>
-          </li>
-        </ul>
-        <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-        </form>
-        <a href="../../sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
-      </div>
-    </nav>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="video">
-          <iframe width="100%" height="470" src="https://www.youtube.com/embed/TbRt6yUZV30?si=WmwKM38nN-Cy0LBd"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <h5>Bánh cuốn nóng</h5>
-          <div class="desc">
-            Bánh cuốn nhân thịt nấm dai mềm, vị mằn mặn ngọt ngọt từ thịt,
-            giòn giòn từ nấm ăn cùng với nước chấm chua ngọt chắc hẳn là một
-            món hấp mà ai cũng thích.
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="ingredient">
-                <h5>Thành phần</h5>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home/home.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../../home/home.html#Breakfast"
+                  >Bữa sáng</a
+                >
+                <a class="dropdown-item" href="../../home/home.html#Lunch"
+                  >Bữa trưa</a
+                >
+                <a class="dropdown-item" href="../../home/home.html#Dessert"
+                  >Ăn nhẹ</a
+                >
+                <a class="dropdown-item" href="../../home/home.html#Vegan"
+                  >Món Rau</a
+                >
+                <a class="dropdown-item" href="../../home/home.html#Meat"
+                  >Món gà</a
+                >
               </div>
             </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Bột bánh cuốn</span>
-              <span class="ingredient-quantity">400 gram</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Nấm mèo</span>
-              <span class="ingredient-quantity">50 gram</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Thịt heo xay</span>
-              <span class="ingredient-quantity">200 gram</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Hành tím</span>
-              <span class="ingredient-quantity">10 củ</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Ớt</span>
-              <span class="ingredient-quantity">1-2 trái</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Chanh</span>
-              <span class="ingredient-quantity">1/2 quả</span>
-            </li>
-
-            <li class="list-group-item">
-              <span class="ingredient-name">Dầu Ăn</span>
-              <span class="ingredient-quantity">110 ml</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Muối, Tiêu</span>
+            <li class="nav-item">
+              <a class="nav-link" href="/parallax_scroll/introduc.html"
+                >Giới thiệu</a
+              >
             </li>
           </ul>
-          <div class="steps-list">
-            <h5>Hướng dẫn thực hiện</h5>
-            <div class="cook-step-content">
-              <div class="cook-step-item">
-                <div class="number">1.</div>
-                <div class="step-content">
-                  <p>
-                    Cho 1,1 lít nước ấm vào 400 gram bột kèm theo 2 muỗng cafe
-                    muối và khoáy đều. Sau khi bột đèo cho thêm 2 muỗng dầu ăn
-                    vào hỗn hợp bột.
-                  </p>
-                  <ul class="step-photo">
-                    <li>
-                      <img src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201040.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cook-step-item">
-                <div class="number">2.</div>
-                <div class="step-content">
-                  <p>
-                    Cho thịt xay vào đảo cho chín thịt, sau đó cho nấm mèo cắt
-                    sợi vào đảo cho đều. Thêm 1 muỗng cafe tiêu vào và tắt
-                    bếp.
-                  </p>
-                  <ul class="step-photo">
-                    <li>
-                      <img src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201222.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cook-step-item">
-                <div class="number">3.</div>
-                <div class="step-content">
-                  <p>
-                    Bạn bắc nồi lên bếp mở lửa vừa, cho 3 muỗng canh đường vào
-                    nồi nấu cho tan chảy và chuyển qua màu vàng nhẹ, cho từ từ
-                    nước dừa tươi vào, thêm 2 muỗng canh nước mắm, 1 muỗng
-                    canh dấm ăn. Tắt bếp và bắc nồi xuống để nguội vắt thêm
-                    1/2 muỗng canh cốt chanh và ớt cắt nhỏ, nêm nếm lại cho
-                    phù hợp với khẩu vị gia đình mình, nước mắm chan bánh cuốn
-                    phải hơi lạt, ngọt dịu, vị chua nhẹ.
-                  </p>
-                  <ul class="step-photo">
-                    <li>
-                      <img src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201302.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cook-step-item">
-                <div class="number">4.</div>
-                <div class="step-content">
-                  <p>
-                    Bạn bắc chảo chống dính lên bếp mở lửa vừa, thêm 200ml
-                    nước nấu sôi thì đổ nước ra, quét 1 lớp dầu ăn, đổ một vá
-                    bột vào chảo, lắc nhẹ để bột dàn mỏng đều, đậy nắp lại.Sau
-                    khoảng 30 giây thì bánh đã chín, bạn đổ bánh ra mâm hoặc
-                    thớt sạch (đã quét dầu) rồi nhanh tay đổ bột vào chảo để
-                    làm mẻ bánh thứ 2.Trên chiếc bánh đã được đổ ra, bạn múc
-                    một muỗng canh nhân thịt lên, trải đều thịt và cuốn lại,
-                    lặp lại cho tới khi hết bột.
-                  </p>
-                  <ul class="step-photo">
-                    <li>
-                      <img src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201400.png" />
-                    </li>
-                    <li>
-                      <img src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201425.png" alt="" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <form
+            class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+          >
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <a
+            href="../../sign_in/sign.html"
+            class="btn btn-primary"
+            data-mdb-ripple-init
+            >Đăng nhập</a
+          >
         </div>
-      </div>
-      <div class="col-sm-4">
-        <h5>Các cách trang trí món ăn</h5>
-        <div class="item-instructions">
-          <img src="../../assets/images/BCN/1.jpg" alt="" />
-          <img src="../../assets/images/BCN/2.jpg" alt="" />
-          <img src="../../assets/images/BCN/3.jpg" alt="" />
-          <img src="../../assets/images/BCN/4.jpg" alt="" />
-          <img src="../../assets/images/BCN/5.jpg" alt="" />
-          <img src="../../assets/images/BCN/6.jpg" alt="" />
-        </div>
-      </div>
+      </nav>
     </div>
-  </div>
-
-  <footer class="footer_area section_padding_130_0">
     <div class="container">
       <div class="row">
-        <!-- Single Widget-->
-        <div class="col-12 col-sm-6 col-lg-6">
-          <div class="single-footer-widget section_padding_0_130">
-            <!-- Footer Logo-->
-
-            <h5 class="widget-title">Cooking Tutoria</h5>
-            <!-- Copywrite Text-->
-            <div class="copywrite-text mb-5">
-              <p style="margin-left: 10px;">
-                Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
-                người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
-                mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
-                hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
-                dàng hơn.
-              </p>
+        <div class="col-sm-8">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="470"
+              src="https://www.youtube.com/embed/TbRt6yUZV30?si=WmwKM38nN-Cy0LBd"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="content">
+            <h5>Bánh cuốn nóng</h5>
+            <div class="desc">
+              Bánh cuốn nhân thịt nấm dai mềm, vị mằn mặn ngọt ngọt từ thịt,
+              giòn giòn từ nấm ăn cùng với nước chấm chua ngọt chắc hẳn là một
+              món hấp mà ai cũng thích.
             </div>
-            <!-- Footer Social Area-->
-            <div class="footer_social_area">
-              <div class="p-3">
-                <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="ingredient">
+                  <h5>Thành phần</h5>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Bột bánh cuốn</span>
+                <span class="ingredient-quantity">400 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Nấm mèo</span>
+                <span class="ingredient-quantity">50 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Thịt heo xay</span>
+                <span class="ingredient-quantity">200 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Hành tím</span>
+                <span class="ingredient-quantity">10 củ</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Ớt</span>
+                <span class="ingredient-quantity">1-2 trái</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Chanh</span>
+                <span class="ingredient-quantity">1/2 quả</span>
+              </li>
+
+              <li class="list-group-item">
+                <span class="ingredient-name">Dầu Ăn</span>
+                <span class="ingredient-quantity">110 ml</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Muối, Tiêu</span>
+              </li>
+            </ul>
+            <div class="steps-list">
+              <h5>Hướng dẫn thực hiện</h5>
+              <div class="cook-step-content">
+                <div class="cook-step-item">
+                  <div class="number">1.</div>
+                  <div class="step-content">
+                    <p>
+                      Cho 1,1 lít nước ấm vào 400 gram bột kèm theo 2 muỗng cafe
+                      muối và khoáy đều. Sau khi bột đèo cho thêm 2 muỗng dầu ăn
+                      vào hỗn hợp bột.
+                    </p>
+                    <ul class="step-photo">
+                      <li>
+                        <img
+                          src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201040.png"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">2.</div>
+                  <div class="step-content">
+                    <p>
+                      Cho thịt xay vào đảo cho chín thịt, sau đó cho nấm mèo cắt
+                      sợi vào đảo cho đều. Thêm 1 muỗng cafe tiêu vào và tắt
+                      bếp.
+                    </p>
+                    <ul class="step-photo">
+                      <li>
+                        <img
+                          src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201222.png"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">3.</div>
+                  <div class="step-content">
+                    <p>
+                      Bạn bắc nồi lên bếp mở lửa vừa, cho 3 muỗng canh đường vào
+                      nồi nấu cho tan chảy và chuyển qua màu vàng nhẹ, cho từ từ
+                      nước dừa tươi vào, thêm 2 muỗng canh nước mắm, 1 muỗng
+                      canh dấm ăn. Tắt bếp và bắc nồi xuống để nguội vắt thêm
+                      1/2 muỗng canh cốt chanh và ớt cắt nhỏ, nêm nếm lại cho
+                      phù hợp với khẩu vị gia đình mình, nước mắm chan bánh cuốn
+                      phải hơi lạt, ngọt dịu, vị chua nhẹ.
+                    </p>
+                    <ul class="step-photo">
+                      <li>
+                        <img
+                          src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201302.png"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">4.</div>
+                  <div class="step-content">
+                    <p>
+                      Bạn bắc chảo chống dính lên bếp mở lửa vừa, thêm 200ml
+                      nước nấu sôi thì đổ nước ra, quét 1 lớp dầu ăn, đổ một vá
+                      bột vào chảo, lắc nhẹ để bột dàn mỏng đều, đậy nắp lại.Sau
+                      khoảng 30 giây thì bánh đã chín, bạn đổ bánh ra mâm hoặc
+                      thớt sạch (đã quét dầu) rồi nhanh tay đổ bột vào chảo để
+                      làm mẻ bánh thứ 2.Trên chiếc bánh đã được đổ ra, bạn múc
+                      một muỗng canh nhân thịt lên, trải đều thịt và cuốn lại,
+                      lặp lại cho tới khi hết bột.
+                    </p>
+                    <ul class="step-photo">
+                      <li>
+                        <img
+                          src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201400.png"
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="../../assets/images/BCN/Ảnh chụp màn hình 2024-06-09 201425.png"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg">
-          <div class="single-footer-widget section_padding_0_130">
-            <!-- Widget Title-->
-            <h5 class="widget-title">Tổng quan</h5>
-            <!-- Footer Menu-->
-            <div class="footer_menu">
-              <ul>
-                <li><a href="../../Home/home.html">Trang chủ</a></li>
-                <li>
-                  <a href="../../Home/home.html#category-title">Danh mục</a>
-                </li>
-                <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
-              </ul>
-            </div>
+        <div class="col-sm-4">
+          <h5>Các cách trang trí món ăn</h5>
+          <div class="item-instructions">
+            <img src="../../assets/images/BCN/1.jpg" alt="" />
+            <img src="../../assets/images/BCN/2.jpg" alt="" />
+            <img src="../../assets/images/BCN/3.jpg" alt="" />
+            <img src="../../assets/images/BCN/4.jpg" alt="" />
+            <img src="../../assets/images/BCN/5.jpg" alt="" />
+            <img src="../../assets/images/BCN/6.jpg" alt="" />
           </div>
         </div>
-        <!-- Single Widget-->
-        <div class="col-12 col-sm-6 col-lg">
-          <div class="single-footer-widget section_padding_0_130">
-            <!-- Widget Title-->
-            <h5 class="widget-title">Danh mục</h5>
-            <!-- Footer Menu-->
-            <div class="footer_menu">
-              <ul>
-                <li>
-                  <a href="../../Home/home.html#Breakfast">Bữa Sáng</a>
-                </li>
-                <li><a href="../../Home/home.html#Vegan">Món chay</a></li>
-                <li><a href="../../Home/home.html#Meat">Món Gà</a></li>
-                <li><a href="../../Home/home.html#Dessert">Ăn nhẹ</a></li>
-                <li><a href="../../Home/home.html#Lunch">Bữa trưa</a></li>
-                <li>
-                  <a href="../../Home/home.html#Chocolate">Chocolate</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg">
-          <div class="single-footer-widget section_padding_0_130">
-            <!-- Widget Title-->
-            <h5 class="widget-title">Liên hệ</h5>
-            <!-- Footer Menu-->
-            <div class="footer_menu">
-              <ul>
-                <li>
-                  <a href="mailto:duynm.23it@vku.udn.vn"
-                    class="fas fa-envelope-open-text">&#160;duynm.23it@vku.udn.vn</a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/duy.nguyenminh.56679" class="fab fa-facebook">&#160;Nguyễn Minh
-                    Duy</a>
-                </li>
-                <li><a href="#" class="fas fa-phone">&#160;0123456789</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        
       </div>
     </div>
-  </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <footer class="footer_area section_padding_130_0">
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-6">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Logo-->
+
+              <h5 class="widget-title">Cooking Tutoria</h5>
+              <!-- Copywrite Text-->
+              <div class="copywrite-text mb-5">
+                <p style="margin-left: 10px">
+                  Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
+                  người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
+                  mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
+                  hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
+                  dàng hơn.
+                </p>
+              </div>
+              <!-- Footer Social Area-->
+              <div class="footer_social_area">
+                <div class="p-3">
+                  <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Tổng quan</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="../../Home/home.html">Trang chủ</a></li>
+                  <li>
+                    <a href="../../Home/home.html#category-title">Danh mục</a>
+                  </li>
+                  <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Danh mục</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a href="../../Home/home.html#Breakfast">Bữa Sáng</a>
+                  </li>
+                  <li><a href="../../Home/home.html#Vegan">Món chay</a></li>
+                  <li><a href="../../Home/home.html#Meat">Món Gà</a></li>
+                  <li><a href="../../Home/home.html#Dessert">Ăn nhẹ</a></li>
+                  <li><a href="../../Home/home.html#Lunch">Bữa trưa</a></li>
+                  <li>
+                    <a href="../../Home/home.html#Chocolate">Chocolate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Liên hệ</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a
+                      href="mailto:duynm.23it@vku.udn.vn"
+                      class="fas fa-envelope-open-text"
+                      >&#160;duynm.23it@vku.udn.vn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/duy.nguyenminh.56679"
+                      class="fab fa-facebook"
+                      >&#160;Nguyễn Minh Duy</a
+                    >
+                  </li>
+                  <li><a href="#" class="fas fa-phone">&#160;0123456789</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>

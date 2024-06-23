@@ -1,311 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bún Bò Huế</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo.png"
+      type="image/x-icon"
+      sizes="48x48"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bún Bò Huế</title>
-  <link rel="stylesheet" href="../css/bootstrap.css" />
-  <link rel="stylesheet" href="detail.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link rel="shortcut icon" href="/public/assets/images/logo.png" type="image/x-icon" sizes="48x48" />
+  <body>
+    <div id="fixed-menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-</head>
-
-<body>
-  <div id="fixed-menu">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        <img src="/public/assets/images/logo.png" alt="" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/public/home/home.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Menu
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../../home/home.html#Breakfast">Bữa sáng</a>
-              <a class="dropdown-item" href="../../home/home.html#Lunch">Bữa trưa</a>
-              <a class="dropdown-item" href="../../home/home.html#Dessert">Ăn nhẹ</a>
-              <a class="dropdown-item" href="../../home/home.html#Vegan">Món Rau</a>
-              <a class="dropdown-item" href="../../home/home.html#Meat">Món gà</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/public/parallax_scroll/introduc.html">Giới thiệu</a>
-          </li>
-        </ul>
-        <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-        </form>
-        <a href="../../sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
-      </div>
-    </nav>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="video">
-          <iframe width="100%" height="470" src="https://www.youtube.com/embed/x8TGlCaEs_4?si=kXrqZ8RDOmvM54h5"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <h5>Bún bò Huế</h5>
-          <div class="desc">
-            Bún bò Huế được mệnh danh là 1 trong 50 món ăn ngon nhất thế giới.
-            Để có được một tô bún bò chuẩn vị đặc sản Huế thơm ngon cần khá
-            nhiều nguyên liệu, tưởng chừng cầu kỳ nhưng lại rất dễ làm.
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="ingredient">
-                <h5>Thành phần</h5>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home/home.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../../home/home.html#Breakfast"
+                  >Bữa sáng</a
+                >
+                <a class="dropdown-item" href="../../home/home.html#Lunch"
+                  >Bữa trưa</a
+                >
+                <a class="dropdown-item" href="../../home/home.html#Dessert"
+                  >Ăn nhẹ</a
+                >
+                <a class="dropdown-item" href="../../home/home.html#Vegan"
+                  >Món Rau</a
+                >
+                <a class="dropdown-item" href="../../home/home.html#Meat"
+                  >Món gà</a
+                >
               </div>
             </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Chân giò heo</span>
-              <span class="ingredient-quantity">1 Kg</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Nạm bò</span>
-              <span class="ingredient-quantity">500 gram</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Bún sợi to</span>
-              <span class="ingredient-quantity">200 gram</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Dầu màu điều</span>
-              <span class="ingredient-quantity">3 muỗng</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Ớt</span>
-              <span class="ingredient-quantity">1-2 trái</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Chanh</span>
-              <span class="ingredient-quantity">1/2 quả</span>
-            </li>
-
-            <li class="list-group-item">
-              <span class="ingredient-name">Mắm ruốt</span>
-              <span class="ingredient-quantity">2 muỗng canh</span>
-            </li>
-            <li class="list-group-item">
-              <span class="ingredient-name">Gia vị quen thuộc</span>
+            <li class="nav-item">
+              <a class="nav-link" href="/parallax_scroll/introduc.html"
+                >Giới thiệu</a
+              >
             </li>
           </ul>
-          <div class="steps-list">
-            <h5>Hướng dẫn thực hiện</h5>
-            <div class="cook-step-content">
-              <div class="cook-step-item">
-                <div class="number">1.</div>
-                <div class="step-content">
-                  <p>
-                    Chân giò heo nếu thích nhiều thịt thì chọn chân sau, thích
-                    da và gân sần sật thì chọn chân trước, chặt thành những
-                    khoanh tròn, rửa sạch. Luộc chân giò qua nước sôi cho hết
-                    chất bẩn sau đó rửa lại bằng nước sạch. Nạm bò rửa sạch,
-                    luộc riêng cùng 1/2 củ gừng thái lát cho thơm. Ninh lửa
-                    nhỏ khoảng 2 tiếng, dùng đũa xiên thử miếng nạm, nếu xiên
-                    qua được là đạt yêu cầu. Đợi thịt nạm nguội thái miếng
-                    mỏng.
-                  </p>
-                  <ul class="step-photo">
-                    <li><img src="../../assets/images/BBH/1.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/2.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/3.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/4.jpg" /></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cook-step-item">
-                <div class="number">2.</div>
-                <div class="step-content">
-                  <p>
-                    Huyết bò hoặc heo có thể mua sẵn hoặc mua huyết về luộc
-                    chín, thái miếng vừa ăn. (Lưu ý mua huyết ở những địa chỉ
-                    uy tín để đảm bảo an toàn thực phẩm). Nếu không ăn huyết
-                    có thể bỏ qua. Chả cua nặn thành từng viên tròn nhỏ thả
-                    vào nồi nước luộc nạm, chả nổi lên là đã chín, bạn vớt ra
-                    để riêng. Có thể thay thế chả cua bằng chả bò, chả giò
-                    hoặc không cho chả cũng được.
-                  </p>
-                  <ul class="step-photo">
-                    <li><img src="../../assets/images/BBH/5.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/6.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/7.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/8.jpg" /></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cook-step-item">
-                <div class="number">3.</div>
-                <div class="step-content">
-                  <p>
-                    Hòa 2 muỗng canh mắm ruốc với 100 ml nước lạnh. Phi 4 cây
-                    sả băm cho thơm cùng 2 thìa dầu ăn, lấy bớt sả ra, cho 3
-                    muỗng canh dầu màu điều vào. Băm nhuyễn 1 củ hành, 1 củ
-                    tỏi kèm 2 trái ớt rồi cho vào chảo phi vàng thì tắt bếp.
-                    Chân giò heo đã sơ chế bạn cho lên bếp ninh lửa nhỏ cùng 1
-                    củ hành tây cắt đôi và 3 cây sả đập dập cho nước dùng thơm
-                    ngọt, ra hết chất trong xương. (Lưu ý thỉnh thoảng hớt bọt
-                    nồi nước dùng để nước được trong). Lấy phần trên của nước
-                    mắm ruốc cho vào nồi, bỏ phần cặn đi. Cho 2 muỗng canh
-                    đường, 2 muỗng canh hạt nêm, 1 muỗng canh muối vào, nêm
-                    nếm cho vừa miệng.
-                  </p>
-                  <ul class="step-photo">
-                    <li><img src="../../assets/images/BBH/9.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/10.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/11.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/12.jpg" /></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cook-step-item">
-                <div class="number">4.</div>
-                <div class="step-content">
-                  <p>
-                    Bạn trụng bún qua nước sôi, để ráo và trút ra tô. Thêm
-                    thịt nạm, móng giò, chả cua, huyết, mùi tàu, hành lá thái
-                    nhỏ, một chút hành tây thái mỏng rồi chan nước dùng. Bún
-                    bò Huế ăn kèm giá đỗ, hoa chuối, húng quế, ớt chưng thì
-                    tuyệt ngon bạn nhé
-                  </p>
-                  <ul class="step-photo">
-                    <li><img src="../../assets/images/BBH/13.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/14.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/15.jpg" /></li>
-                    <li><img src="../../assets/images/BBH/16.jpg" /></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <form
+            class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+          >
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <a
+            href="../../sign_in/sign.html"
+            class="btn btn-primary"
+            data-mdb-ripple-init
+            >Đăng nhập</a
+          >
         </div>
-      </div>
-      <div class="col-sm-4">
-        <h5>Các cách trang trí món ăn</h5>
-        <div class="item-instructions">
-          <img src="../../assets/images/BBH/6.1.jpg" />
-          <img src="../../assets/images/BBH/6.2.jpg" />
-          <img src="../../assets/images/BBH/6.3.jpg" />
-          <img src="../../assets/images/BBH/6.4.jpg" />
-          <img src="../../assets/images/BBH/6.5.jpg" />
-          <img src="../../assets/images/BBH/6.6.jpg" />
-        </div>
-      </div>
+      </nav>
     </div>
-  </div>
-
-  <footer class="footer_area section_padding_130_0">
     <div class="container">
       <div class="row">
-        <!-- Single Widget-->
-        <div class="col-12 col-sm-6 col-lg-6">
-          <div class="single-footer-widget section_padding_0_130">
-            <!-- Footer Logo-->
-
-            <h5 class="widget-title">Cooking Tutoria</h5>
-            <!-- Copywrite Text-->
-            <div class="copywrite-text mb-5">
-              <p style="margin-left: 10px;">
-                Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
-                người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
-                mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
-                hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
-                dàng hơn.
-              </p>
+        <div class="col-sm-8">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="470"
+              src="https://www.youtube.com/embed/x8TGlCaEs_4?si=kXrqZ8RDOmvM54h5"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="content">
+            <h5>Bún bò Huế</h5>
+            <div class="desc">
+              Bún bò Huế được mệnh danh là 1 trong 50 món ăn ngon nhất thế giới.
+              Để có được một tô bún bò chuẩn vị đặc sản Huế thơm ngon cần khá
+              nhiều nguyên liệu, tưởng chừng cầu kỳ nhưng lại rất dễ làm.
             </div>
-            <!-- Footer Social Area-->
-            <div class="footer_social_area">
-              <div class="p-3">
-                <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="ingredient">
+                  <h5>Thành phần</h5>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Chân giò heo</span>
+                <span class="ingredient-quantity">1 Kg</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Nạm bò</span>
+                <span class="ingredient-quantity">500 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Bún sợi to</span>
+                <span class="ingredient-quantity">200 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Dầu màu điều</span>
+                <span class="ingredient-quantity">3 muỗng</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Ớt</span>
+                <span class="ingredient-quantity">1-2 trái</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Chanh</span>
+                <span class="ingredient-quantity">1/2 quả</span>
+              </li>
+
+              <li class="list-group-item">
+                <span class="ingredient-name">Mắm ruốt</span>
+                <span class="ingredient-quantity">2 muỗng canh</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Gia vị quen thuộc</span>
+              </li>
+            </ul>
+            <div class="steps-list">
+              <h5>Hướng dẫn thực hiện</h5>
+              <div class="cook-step-content">
+                <div class="cook-step-item">
+                  <div class="number">1.</div>
+                  <div class="step-content">
+                    <p>
+                      Chân giò heo nếu thích nhiều thịt thì chọn chân sau, thích
+                      da và gân sần sật thì chọn chân trước, chặt thành những
+                      khoanh tròn, rửa sạch. Luộc chân giò qua nước sôi cho hết
+                      chất bẩn sau đó rửa lại bằng nước sạch. Nạm bò rửa sạch,
+                      luộc riêng cùng 1/2 củ gừng thái lát cho thơm. Ninh lửa
+                      nhỏ khoảng 2 tiếng, dùng đũa xiên thử miếng nạm, nếu xiên
+                      qua được là đạt yêu cầu. Đợi thịt nạm nguội thái miếng
+                      mỏng.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/BBH/1.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/2.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/3.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/4.jpg" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">2.</div>
+                  <div class="step-content">
+                    <p>
+                      Huyết bò hoặc heo có thể mua sẵn hoặc mua huyết về luộc
+                      chín, thái miếng vừa ăn. (Lưu ý mua huyết ở những địa chỉ
+                      uy tín để đảm bảo an toàn thực phẩm). Nếu không ăn huyết
+                      có thể bỏ qua. Chả cua nặn thành từng viên tròn nhỏ thả
+                      vào nồi nước luộc nạm, chả nổi lên là đã chín, bạn vớt ra
+                      để riêng. Có thể thay thế chả cua bằng chả bò, chả giò
+                      hoặc không cho chả cũng được.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/BBH/5.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/6.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/7.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/8.jpg" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">3.</div>
+                  <div class="step-content">
+                    <p>
+                      Hòa 2 muỗng canh mắm ruốc với 100 ml nước lạnh. Phi 4 cây
+                      sả băm cho thơm cùng 2 thìa dầu ăn, lấy bớt sả ra, cho 3
+                      muỗng canh dầu màu điều vào. Băm nhuyễn 1 củ hành, 1 củ
+                      tỏi kèm 2 trái ớt rồi cho vào chảo phi vàng thì tắt bếp.
+                      Chân giò heo đã sơ chế bạn cho lên bếp ninh lửa nhỏ cùng 1
+                      củ hành tây cắt đôi và 3 cây sả đập dập cho nước dùng thơm
+                      ngọt, ra hết chất trong xương. (Lưu ý thỉnh thoảng hớt bọt
+                      nồi nước dùng để nước được trong). Lấy phần trên của nước
+                      mắm ruốc cho vào nồi, bỏ phần cặn đi. Cho 2 muỗng canh
+                      đường, 2 muỗng canh hạt nêm, 1 muỗng canh muối vào, nêm
+                      nếm cho vừa miệng.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/BBH/9.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/10.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/11.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/12.jpg" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">4.</div>
+                  <div class="step-content">
+                    <p>
+                      Bạn trụng bún qua nước sôi, để ráo và trút ra tô. Thêm
+                      thịt nạm, móng giò, chả cua, huyết, mùi tàu, hành lá thái
+                      nhỏ, một chút hành tây thái mỏng rồi chan nước dùng. Bún
+                      bò Huế ăn kèm giá đỗ, hoa chuối, húng quế, ớt chưng thì
+                      tuyệt ngon bạn nhé
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/BBH/13.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/14.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/15.jpg" /></li>
+                      <li><img src="../../assets/images/BBH/16.jpg" /></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg">
-          <div class="single-footer-widget section_padding_0_130">
-            <!-- Widget Title-->
-            <h5 class="widget-title">Tổng quan</h5>
-            <!-- Footer Menu-->
-            <div class="footer_menu">
-              <ul>
-                <li><a href="../../Home/home.html">Trang chủ</a></li>
-                <li>
-                  <a href="../../Home/home.html#category-title">Danh mục</a>
-                </li>
-                <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
-              </ul>
-            </div>
+        <div class="col-sm-4">
+          <h5>Các cách trang trí món ăn</h5>
+          <div class="item-instructions">
+            <img src="../../assets/images/BBH/6.1.jpg" />
+            <img src="../../assets/images/BBH/6.2.jpg" />
+            <img src="../../assets/images/BBH/6.3.jpg" />
+            <img src="../../assets/images/BBH/6.4.jpg" />
+            <img src="../../assets/images/BBH/6.5.jpg" />
+            <img src="../../assets/images/BBH/6.6.jpg" />
           </div>
         </div>
-        <!-- Single Widget-->
-        <div class="col-12 col-sm-6 col-lg">
-          <div class="single-footer-widget section_padding_0_130">
-            <!-- Widget Title-->
-            <h5 class="widget-title">Danh mục</h5>
-            <!-- Footer Menu-->
-            <div class="footer_menu">
-              <ul>
-                <li>
-                  <a href="../../Home/home.html#Breakfast">Bữa Sáng</a>
-                </li>
-                <li><a href="../../Home/home.html#Vegan">Món chay</a></li>
-                <li><a href="../../Home/home.html#Meat">Món Gà</a></li>
-                <li><a href="../../Home/home.html#Dessert">Ăn nhẹ</a></li>
-                <li><a href="../../Home/home.html#Lunch">Bữa trưa</a></li>
-                <li>
-                  <a href="../../Home/home.html#Chocolate">Chocolate</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg">
-          <div class="single-footer-widget section_padding_0_130">
-            <!-- Widget Title-->
-            <h5 class="widget-title">Liên hệ</h5>
-            <!-- Footer Menu-->
-            <div class="footer_menu">
-              <ul>
-                <li>
-                  <a href="mailto:duynm.23it@vku.udn.vn"
-                    class="fas fa-envelope-open-text">&#160;duynm.23it@vku.udn.vn</a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/duy.nguyenminh.56679" class="fab fa-facebook">&#160;Nguyễn Minh
-                    Duy</a>
-                </li>
-                <li><a href="#" class="fas fa-phone">&#160;0123456789</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        
       </div>
     </div>
-  </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <footer class="footer_area section_padding_130_0">
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-6">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Logo-->
+
+              <h5 class="widget-title">Cooking Tutoria</h5>
+              <!-- Copywrite Text-->
+              <div class="copywrite-text mb-5">
+                <p style="margin-left: 10px">
+                  Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
+                  người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
+                  mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
+                  hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
+                  dàng hơn.
+                </p>
+              </div>
+              <!-- Footer Social Area-->
+              <div class="footer_social_area">
+                <div class="p-3">
+                  <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Tổng quan</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="../../Home/home.html">Trang chủ</a></li>
+                  <li>
+                    <a href="../../Home/home.html#category-title">Danh mục</a>
+                  </li>
+                  <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Danh mục</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a href="../../Home/home.html#Breakfast">Bữa Sáng</a>
+                  </li>
+                  <li><a href="../../Home/home.html#Vegan">Món chay</a></li>
+                  <li><a href="../../Home/home.html#Meat">Món Gà</a></li>
+                  <li><a href="../../Home/home.html#Dessert">Ăn nhẹ</a></li>
+                  <li><a href="../../Home/home.html#Lunch">Bữa trưa</a></li>
+                  <li>
+                    <a href="../../Home/home.html#Chocolate">Chocolate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Liên hệ</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a
+                      href="mailto:duynm.23it@vku.udn.vn"
+                      class="fas fa-envelope-open-text"
+                      >&#160;duynm.23it@vku.udn.vn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/duy.nguyenminh.56679"
+                      class="fab fa-facebook"
+                      >&#160;Nguyễn Minh Duy</a
+                    >
+                  </li>
+                  <li><a href="#" class="fas fa-phone">&#160;0123456789</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
