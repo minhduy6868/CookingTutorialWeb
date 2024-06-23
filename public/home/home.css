@@ -59,8 +59,8 @@ ul {
   list-style: none;
 }
 .carousel-inner img {
-  height: 500px; 
-  object-fit: cover; 
+  height: 500px;
+  object-fit: cover;
 }
 
 .row {
@@ -186,6 +186,9 @@ nav ul li {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.recipe-card a:hover {
+  text-decoration: none;
+}
 
 .recipe-card img {
   width: 100%;
@@ -289,6 +292,9 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2em;
   padding: 2em 2em;
+}
+.category-cards a:hover {
+  text-decoration: none;
 }
 
 .cat-card {
