@@ -553,17 +553,10 @@ ol, ul {
     padding: 0;
 }
 
-.footer_menu{
-    margin-left: 10px;
-}
 footer {
     margin-top: 15px;
     background: #333;
     padding: 20px 0;
     color: #fff;
-}
-
-.footer p{  
-    margin: 0px auto;
-}
+}   
   
