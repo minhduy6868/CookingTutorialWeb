@@ -106,166 +106,88 @@
       </div>
     </nav>
   </div>
-    <div class="container full-width-container">
-        <div class="forms-container">
-            <div class="signIn-signUp">
-                <form class="sign-in-form" id="signInForm">
-                    <h2 class="title">Sign In</h2>
-                    <div class="input-field">
-                        <i class='bx bx-user'></i>
-                        <input type="text" placeholder="User Name" id="signInUserName" required>
-                    </div>
-                    <div class="input-field">
-                        <i class='bx bx-lock-alt'></i>
-                        <input type="password" placeholder="Password" id="signInPassword" required>
-                    </div>
-                    <input type="submit" value="Log In" class="btn solid">
-                    <p class="social-text">Or Sign in with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="bx bxl-facebook"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bx bxl-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bx bxl-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bx bxl-linkedin"></i>
-                        </a>
-                    </div>
-                </form>
-                <form class="sign-up-form" id="signUpForm">
-                    <h2 class="title">Sign Up</h2>
-                    <div class="input-field">
-                        <i class='bx bx-user'></i>
-                        <input type="text" placeholder="User Name" id="signUpUserName" required>
-                    </div>
-                    <div class="input-field">
-                        <i class='bx bx-envelope'></i>
-                        <input type="email" placeholder="Email" id="signUpEmail" required>
-                    </div>
-                    <div class="input-field">
-                        <i class='bx bx-lock-alt'></i>
-                        <input type="password" placeholder="Password" id="signUpPassword" required>
-                    </div>
-                    <input type="submit" value="Sign Up" class="btn solid">
-                    <p class="social-text">Or Sign up with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="bx bxl-facebook"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bx bxl-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bx bxl-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bx bxl-linkedin"></i>
-                        </a>
-                    </div>
-                </form>
-
-<!--<template id="dialog-template">
-  <script>
-    document.getElementById('launch-dialog').addEventListener('click', () => {
-      const wrapper = document.querySelector('.wrapper');
-      const closeButton = document.querySelector('button.close');
-      const wasFocused = document.activeElement;
-      wrapper.classList.add('open');
-      closeButton.focus();
-      closeButton.addEventListener('click', () => {
-        wrapper.classList.remove('open');
-        wasFocused.focus();
-      });
-    });
-  </script>
-  <style>
-    .wrapper {
-      opacity: 0;
-      transition: visibility 0s, opacity 0.25s ease-in;
-    }
-    .wrapper:not(.open) {
-      visibility: hidden;
-    }
-    .wrapper.open {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      height: 100vh;
-      position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      opacity: 1;
-      visibility: visible;
-    }
-    .overlay {
-      background: rgba(0, 0, 0, 0.8);
-      height: 100%;
-      position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      width: 100%;
-    }
-    .dialog {
-      background: #ffffff;
-      max-width: 600px;
-      padding: 1rem;
-      position: fixed;
-    }
-    button {
-      all: unset;
-      cursor: pointer;
-      font-size: 1.25rem;
-      position: absolute;
-        top: 1rem;
-        right: 1rem;
-    }
-    button:focus {
-      border: 2px solid blue;
-    }
-  </style>
-  <div class="wrapper">
-  <div class="overlay"></div>
-    <div class="dialog" role="dialog" aria-labelledby="title" aria-describedby="content">
-      <button class="close" aria-label="Close">✖️</button>
-      <h1 id="title">Hello world</h1>
-      <div id="content" class="content">
-        <p>This is content in the body of our modal</p>
+  <div class="container full-width-container">
+    <div class="forms-container">
+      <div class="signIn-signUp">
+        <form class="sign-in-form" id="signInForm">
+          <h2 class="title">Đăng Nhập</h2>
+          <div class="input-field">
+            <i class='bx bx-user'></i>
+            <input type="text" placeholder="Tên Đăng Nhập" id="signInUserName" required>
+          </div>
+          <div class="input-field">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" placeholder="Mật Khẩu" id="signInPassword" required>
+          </div>
+          <input type="submit" value="Đăng Nhập" class="btn solid">
+          <p class="social-text">Hoặc đăng nhập bằng các nền tảng xã hội</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </div>
+        </form>
+        <form class="sign-up-form" id="signUpForm">
+          <h2 class="title">Đăng Ký</h2>
+          <div class="input-field">
+            <i class='bx bx-user'></i>
+            <input type="text" placeholder="Tên Đăng Nhập" id="signUpUserName" required>
+          </div>
+          <div class="input-field">
+            <i class='bx bx-envelope'></i>
+            <input type="email" placeholder="Email" id="signUpEmail" required>
+          </div>
+          <div class="input-field">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" placeholder="Mật Khẩu" id="signUpPassword" required>
+          </div>
+          <input type="submit" value="Đăng Ký" class="btn solid">
+          <p class="social-text">Hoặc đăng ký bằng các nền tảng xã hội</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>Người mới ở đây?</h3>
+          <p>Chào mừng đến với nền tảng của chúng tôi! Vui lòng nhập tên đăng nhập và mật khẩu của bạn để truy cập tài khoản. Nếu bạn chưa có tài khoản, bạn có thể đăng ký miễn phí.</p>
+          <button class="btn transparent" id="sign-up-btn">Đăng Ký</button>
+        </div>
+        <img src="img/1.png" alt="" class="img">
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>Người quen của chúng tôi?</h3>
+          <p>Chào mừng đến với nền tảng của chúng tôi! Vui lòng nhập tên đăng nhập và mật khẩu của bạn để truy cập tài khoản. Nếu bạn chưa có tài khoản, bạn có thể đăng ký miễn phí.</p>
+          <button class="btn transparent" id="sign-in-btn">Đăng Nhập</button>
+        </div>
+        <img src="img/2.png" alt="" class="img">
       </div>
     </div>
   </div>
-</template>
-
-<button id="launch-dialog">Launch dialog</button> 
--->
-            </div>
-        </div>
-        <div class="panels-container">
-            <div class="panel left-panel">
-                <div class="content">
-                    <h3>New Here ?</h3>
-                    <p>Welcome to our platform! Please enter your username and password to access your account. If you don't have an account yet, you can sign up for free.</p>
-                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
-                </div>
-                <img src="img/1.png" alt="" class="img">
-            </div>
-            <div class="panel right-panel">
-                <div class="content">
-                    <h3>One of Us?</h3>
-                    <p>Welcome to our platform! Please enter your username and password to access your account. If you don't have an account yet, you can sign up for free.</p>
-                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
-                </div>
-                <img src="img/2.png" alt="" class="img">
-            </div>
-        </div>
-    </div>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

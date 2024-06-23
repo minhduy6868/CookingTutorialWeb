@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "cooking-tutorial-it3num1",
     "public": "public",
     "ignore": [
       "firebase.json",
@@ -9,7 +10,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "home.html"
       }
     ]
   }
