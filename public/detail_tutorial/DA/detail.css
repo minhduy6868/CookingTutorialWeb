@@ -300,6 +300,11 @@ h6{
     background-color: white !important;
     border-color: white !important;
   }
+  #fixed-menu {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+  }
   
   body{margin-top:20px;}
 
